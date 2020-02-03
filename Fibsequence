@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class FibSequence{
+        public static void main(String args[]){
+            /*prompt the user for a number here.
+               *then, pass that number as an argument to the sequence method (ie call the method).
+                *finally, print the result to the console.
+                 */
+            Scanner keys = new Scanner(System.in);
+            System.out.println("Give me a number kid");
+            int x = keys.nextInt();
+            sequence(x);
+            System.out.println("The number at position " + x + " of the fibonacci sequence is ");
+
+        }
+        public static long sequence(int term){
+            int k, m,n;
+            
+            if (term == 1|| term == 2){
+                return 1;
+            }
+            for(int i = 1; i <= term; i++){
+
+            
+               /*what needs to be given? why do you think the return type is long rather than int?
+                */
+            }
+        }
+}
