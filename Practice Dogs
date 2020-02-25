@@ -1,0 +1,28 @@
+public class PracticeDogs {
+    private String name;
+    private String breed;
+    private double weight;
+    private int cuteIndex;
+    public void main(String[]ars){
+        PracticeDogs pd = new PracticeDogs("Dozer","Bassett",60,4);
+        System.out.println(name + "'s Cute Mass Index is: " + cuteIndex);
+    }
+    public PracticeDogs(String nme,String brd,double wt,int CI){
+        name = nme;
+        breed = brd;
+        weight = wt;
+        cuteIndex = CI;
+    }
+    public void newName(String NewDog){
+        name = NewDog;
+    }
+    public String getName(String NewDog){
+        return NewDog;
+    }
+    public static double cuteMassIndex(double weight,int cuteIndex, String name){
+        int k = name.length();
+        double m = weight*cuteIndex/k;
+        return m;
+    }
+    
+}
